@@ -3,7 +3,10 @@ import cvxopt as cx
 
 class svm:
     def __init_(self, kernel="polynomial", degree=2, C=1):
-        pass
+        self.kernel = kernel
+        if self.kernel == "polynomial":
+            self.degree = degree
+        self.C = C
 
     def fit(self, X, y):
         pass
