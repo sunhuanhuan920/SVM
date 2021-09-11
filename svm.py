@@ -1,5 +1,5 @@
 import numpy as np
-import cvxopt as cx
+import cvxopt as cx # quadratic programming software
 
 class svm:
     def __init_(self, kernel="polynomial", degree=2, C=1):
